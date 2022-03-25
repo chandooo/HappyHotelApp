@@ -2,7 +2,11 @@
 # For more information see: https://github.com/actions/setup-java/blob/main/docs/advanced-usage.md#apache-maven-with-a-settings-path
 
 name: Build
-on: 
+on:  
+  push:
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
   
 jobs:
