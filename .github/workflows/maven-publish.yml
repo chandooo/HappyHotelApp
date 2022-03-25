@@ -58,7 +58,7 @@ jobs:
       #  run: mvn -e -B clean compile test package --file HappyHotelApp/pom.xml org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=triangulum-ctv-per -Dsonar.junit.reportPaths=target/surefire-reports -Dsonar.surefire.reportsPath=target/surefire-reports
         run: mvn -e -B clean compile test package --file pom.xml 
          
-      - name: Deploy
-        run: mvn -e deploy --file HappyHotelApp/pom.xml
+     # - name: Deploy
+     #   run: mvn -e deploy --file HappyHotelApp/pom.xml
       # - name: Push Artifacts to Google Artifact Repo
       #   run: mvn --file HappyHotelApp/pom.xml deploy
